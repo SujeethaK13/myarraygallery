@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>MY FAVOURITE ART</title>
+    </head>
+    <body>
+        <h1>MY FAVORITE PICTURES</h1>
+        <img id="art" src="image 1.jpg">
+        <p id="facts">Welcome to the World of Art</p>
+        <button type="button" onclick="next()">NEXT SLIDE</button>
+    <style>
+        body{
+            text-align:center;
+        }
+        img{
+            width:550px;
+            height:550px;
+            border-style:dashed;
+            border-color: chartreuse;
+            padding: 10px;
+        }
+    </style>
+    <script>
+    var images=[
+            "https://st2.depositphotos.com/4643771/11108/v/600/depositphotos_111087992-stock-illustration-warli-tribal-art-13.jpg",
+            "https://cdn.shopify.com/s/files/1/1306/4195/products/wallmantra-wall-paintings-multi-color-warli-art-painting-wall-hanging-set-of-4-pieces-11875228975197_1024x1024.jpg?v=1608154872",
+            "https://st2.depositphotos.com/4643771/11101/v/600/depositphotos_111011934-stock-illustration-warli-tribal-art-6.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFzJHNoRuQci-WJIMhU8D22OD-kP_szJzcXg&usqp=CAU",
+            "https://i.pinimg.com/736x/96/cc/60/96cc6053292bc2a2fe4be01bb9e7ce94.jpg",
+            "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/warli-painting-manjiri-bhave.jpg",
+            "https://i.etsystatic.com/18203099/d/il/9dedbf/2790523997/il_340x270.2790523997_8h44.jpg?version=0",
+            "https://cdn5.vectorstock.com/i/1000x1000/28/04/warli-peacock-vector-32242804.jpg"
+        ];
+    var facts=[
+            "Warli art is a tribal art, these are handmade paintings by tribal people of India. It is a traditional art made by tribal adivasi people also known as Warlis.",
+            "Warli art is also known as folk style of painting. It is primarily used for decoration purpose rather than purely aesthetic.",
+            "Originally Worli painting are done by using white pigment made from a mixture of rice paste and water and a bamboo stick is used as a paint brush.",
+            "Warli Art revolves around the mother nature by giving more importance to nature and wildlife. Their art form symbolizes the balance of the universe.",
+            "Warli painting use a set of basic geometrical shapes such as circle, triangle, and square which represent nature. The circle and the triangle come from their observation of nature, like the circle represents the Sun or Moon and the triangles represents mountains or the trees.",
+            "Tarpa dance is one of the central aspect of every Warli paintings. In this both man and women entwine their hands and move in circle around the Tarpa players.",
+            "Apart from nature Warli painting covers day to day activities of village people. They paint various activities like dancing, playing and performing puja.",
+            "Warli artists represent togetherness and their ancient culture in their painting. "
+        ];
+    var m = 0;
+    function next(){
+     if (m == 8)
+     {
+       
+     m=0 
+     }
+     document.getElementById("art").src=images[m];
+     document.getElementById("facts").innerHTML=facts[m];
+      m++;
+      }
+    </script>
+    </body>
+</html>
